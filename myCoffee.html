@@ -6,21 +6,23 @@
     <title>Coffee House</title>
     <link rel="stylesheet" href="myCoffee.css">
 </head>
+
 <body>
     <header>
         <nav>
             <h2>Coffee House</h2>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#features">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <a href="#menu" class="down-arrow">⌄</a>
+        <section class="hero" id = "hero">
             <h1>Welcome to Coffee House</h1>
             <p>We Sell Best Premium Coffee</p>
 
@@ -30,7 +32,7 @@
             </div>
         </section>
  
-        <section class="menu">
+        <section class="menu" id = "menu">
             <h2>Our Menu</h2>
             <div class="card">
                 <h3>Espresso</h3>
@@ -51,7 +53,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id = "features">
             <h2>Why choose us?</h2>
             <div class="feature-container">
                 <div class="feature-card">
@@ -74,7 +76,7 @@
 
     </main>
 
-        <section class="contact">
+        <section class="contact" id = "contact">
             <h2>Contact Us</h2>
             <form class="contact-form">
                 <input type="text" placeholder="Your Name">
@@ -87,6 +89,9 @@
     <footer>
         <P>Coffee House. All Rights Reserved.</P>
     </footer>
-
+    
+    <button id="scrollToTop">↑</button>
+    <script src="myCoffee.js"></script>
+   
 </body>
 </html>
